@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inserimento Dati Rettangolo</title>
 </head>
 <body>
-    <form>
-        
+    <h2>Calcolo Perimetro e Area del Rettangolo</h2>
+    
+    <form action="calcola.php" method="POST">
+        <label for="base">Inserire base:</label>
+        <input type="number" id="base" name="base" step="any" required>
+        <br><br>
+
+        <label for="altezza">Inserire altezza:</label>
+        <input type="number" id="altezza" name="altezza" step="any" required>
+        <br><br>
+
+        <input type="submit" value="Invia valori">
+        <input type="reset" value="Cancella valori">
     </form>
 </body>
 </html>
